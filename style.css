@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top right, #41d8dd 0%, #5583ee 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div2 {
+  position: relative;
+  width: 70vw;
+  height: 90vh;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  overflow: hidden;
+}
+
+.Player0,
+.Player1 {
+  flex: 50%;
+  height: 100%;
+}
+
+.active-player {
+  background-color: rgba(65, 216, 221, 0.3);
+}
+
+.winning {
+  color: white;
+  background: linear-gradient(to bottom left, #8debff, #6cacff);
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.name {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5rem;
+  padding-bottom: 4rem;
+}
+
+.score {
+  font-size: 5rem;
+}
+
+.current {
+  background: linear-gradient(to top right, #41d8dd 0%, #5583ee 100%);
+  margin: 3rem;
+  width: 8rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+
+.current-label {
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: white;
+}
+
+.current-score {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.button {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%);
+  left: 50%;
+}
+
+.btn {
+  border-style: none;
+  border-radius: 1.5rem;
+  padding: 0.7rem 2.5rem;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.15s;
+
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn:active {
+  opacity: 0.8;
+}
+.new-game {
+  margin-top: 1.5rem;
+}
+.roll-dice {
+  margin-top: 15rem;
+}
+.hold {
+  margin-top: 1rem;
+}
+
+.dice {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.hidden {
+  display: none;
+}
